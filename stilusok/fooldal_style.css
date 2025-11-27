@@ -6,6 +6,7 @@
     --ACCENT-LIGHT: #00cfb7;
     --FONT: "Open Sans", sans-serif;
     --HEADING-WEIGHT: 800;
+    --TEXT-WEIGHT-BOLD: 500;
     --TEXT-WEIGHT: 300;
 }
 
@@ -13,5 +14,35 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: var(--FONT);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+    padding: 1rem 0;
+    background-color: var(--PRIMARY);
+    margin-bottom: 1rem;
+}
+
+header h3 {
+    font-weight: var(--HEADING-WEIGHT);
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: var(--TEXT-WEIGHT-BOLD);
+    transition: opacity 0.2s;
+}
+
+header a:hover {
+    opacity: 0.6;
 }
 
