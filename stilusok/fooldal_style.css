@@ -46,3 +46,10 @@ header a:hover {
     opacity: 0.6;
 }
 
+h1 {
+    font-weight: var(--HEADING-WEIGHT);
+}
+
+#highlight {
+    color: var(--ACCENT)
+}
