@@ -22,8 +22,8 @@ body {
 
 header {
     display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
     column-gap: 3rem;
     padding: 1rem 0;
     background-color: var(--PRIMARY);
