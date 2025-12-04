@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header {
+    background: #5fa623;
+    padding: 20px;
+    text-align: center;
+}
+
+header h3 {
+    background: #d10d80;
+    display: inline-block;
+    padding: 8px 30px;
+    margin-bottom: 15px;
+}
+
+nav {
+    background: #d10d80;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+nav a {
+    width: 60px;
+    height: 10px;
+    background: #5fa623;
+    display: inline-block;
+}
+
+main {
+    background: #0e6fd4;
+    padding: 20px 0;
+}
+
+#article1 {
+    background: #0056c9;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#article1 h1 {
+    background: #d10d80;
+    width: 70%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    padding: 10px;
+}
+
+#article1 img {
+    float: right;
+    width: 40%;
+    background: #8a0015;
+    margin-left: 20px;
+}
+
+#article1 p {
+    background: #d10d80;
+    padding: 20px;
+    width: 55%;
+}
+
+#article2 {
+    background: #0056c9;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+}
+
+#article2 img {
+    width: 30%;
+    background: #8a0015;
+    position: absolute;
+    left: -30%;
+    top: 20px;
+}
+
+#article2 h1 {
+    background: #d10d80;
+    width: 60%;
+    margin: 0 auto 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+#article2 p {
+    background: #d10d80;
+    padding: 20px;
+}
+
+#article3 {
+    background: #0056c9;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#article3 img {
+    float: right;
+    width: 35%;
+    background: #8a0015;
+    margin-left: 20px;
+}
+
+#article3 h1 {
+    background: #d10d80;
+    width: 50%;
+    margin: 0 auto 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+#article3 p {
+    background: #d10d80;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#article3 p:nth-of-type(2) {
+    width: 70%;
+    margin: 20px auto;
+}
+
+#article3 table {
+    background: #d10d80;
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+footer {
+    background: #5fa623;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h3 {
+    background: #d10d80;
+    padding: 10px 30px;
+    display: inline-block;
+}
