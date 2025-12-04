@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="stilusok/fooldal_style.css" />
     <title>Főoldal</title>
   </head>
   <body>
@@ -22,12 +23,12 @@
       <a href="#beszam">Beszámolóink</a>
     </header>
     <main>
-      <article>
-        <section>
+      <article id="hero">
+        <section id="hero-text">
           <h1>Tórinói <span id="highlight">élményeink</span></h1>
           <p>
-            Weboldalrendszerünk bemutatja osztályunkat, és kirándulásunk
-            látványosságait és helyszíneit
+            Weboldalrendszerünk bemutatja osztályunkat, irándulásunk
+            látványosságait és helyszíneit, illetve egyéb érdekességeket.
           </p>
         </section>
         <section>
@@ -59,28 +60,22 @@
                 <img src="..." class="d-block w-100" alt="..." />
                 <div class="carousel-caption d-none d-md-block">
                   <h5>First slide label</h5>
-                  <p>
-                    Some representative placeholder content for the first slide.
-                  </p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="..." />
+                <img
+                  src="forrasok/fooldal_forras/szalezi_szent_ferenc.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>
-                    Some representative placeholder content for the second
-                    slide.
-                  </p>
+                  <h5>Szalézi Szent Ferenc Élete</h5>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="..." />
+                <img src="" class="d-block w-100" alt="..." />
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Third slide label</h5>
-                  <p>
-                    Some representative placeholder content for the third slide.
-                  </p>
                 </div>
               </div>
             </div>
@@ -111,17 +106,23 @@
           </div>
         </section>
       </article>
-      <article>
+      <article id="beszam">
         <h2>Weboldalrendszerünk</h2>
         <p>
           Osztályunk diákjai saját oldalaikon számoltak be kirándulásunk egyes
           helyszeneiről
         </p>
         <ul>
-          <li>Ipari Forradalom Torinóban  </li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <a href="oldalak/IpariForradalomT.html">
+            <li>Ipari Forradalom Torinóban — Czeczei Bence</li></a
+          >
+          <a href="oldalak/SzaleziFerenc.html">
+            <li>Szalézi Szent Ferenc Élete — Fazekas Milán</li></a
+          >
+          <a href="oldalak/milano.html"> <li>Milánó — Dévényi Donát</li></a>
+          <a href="oldalak/szalezi_szent_ferenc_templom.html">
+            <li>Szalézi Szent Ferenc Templom — Huber Milán</li></a
+          >
         </ul>
       </article>
       <article>
