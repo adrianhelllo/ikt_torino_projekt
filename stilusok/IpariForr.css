@@ -1,0 +1,36 @@
+header {
+    grid-area: h; 
+}
+
+nav { 
+    grid-area: n; 
+}
+
+aside  {
+    grid-area: as; 
+}
+
+#arti1 {
+    grid-area: ar1; 
+}
+
+#arti2 { 
+    grid-area: ar2;
+}
+
+#arti3 { 
+    grid-area: ar3;
+}
+
+footer { 
+    grid-area: f; 
+}
+
+main {
+    grid-template-areas:
+    "h h h"
+    "n n n"
+    "as ar ar"
+    "ar2 ar2 ar3"
+    "f f f";
+}
