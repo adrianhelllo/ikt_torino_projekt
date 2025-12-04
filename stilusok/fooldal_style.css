@@ -36,10 +36,7 @@ header h3 {
 }
 
 header a {
-    text-decoration: none;
-    color: black;
     font-size: 1.3rem;
-    font-weight: var(--TEXT-WEIGHT-BOLD);
     transition: opacity 0.2s;
 }
 
@@ -70,6 +67,17 @@ h1 {
     display: block;
 }
 
+#beszam {
+    padding: 1.5rem;
+    background-color: var(--ACCENT-LIGHT);
+}
+
+#beszam li a {
+    color: var(--PRIMARY);
+}
+
+/* -- */
+
 #highlight {
     color: var(--ACCENT)
 }
@@ -79,5 +87,10 @@ h2 {
     font-size: 2.5rem;
     font-weight: var(--HEADING-WEIGHT);
     margin: 1rem 0;
+}
 
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: var(--TEXT-WEIGHT-BOLD);
 }
