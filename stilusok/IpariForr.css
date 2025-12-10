@@ -1,3 +1,23 @@
+h1 {
+    grid-area: h1;
+}
+
+h2 {
+    grid-area: h2;
+}
+
+p {
+    grid-area: p;
+}
+
+img {
+    grid-area: im;
+}
+
+table {
+    grid-area: ta;
+}
+
 header {
     grid-area: h;
     display: grid;
@@ -16,21 +36,45 @@ aside  {
 
 article{
     grid-area: ar;
-    display: grid;
-    grid-template-areas: 
-    ""
     ;
 }
+
+#arti0 {
+    grid-area: ar0;
+    display: grid;
+    grid-template-areas: 
+    "h1 h1 im"
+    "n n im"
+    "n n im";
+}
+
 #arti1 {
     grid-area: ar1; 
+    display: grid;
+    grid-template-areas: 
+    "im h2 h2"
+    "im p p"
+    "im p p"
+    ;
 }
 
 #arti2 { 
     grid-area: ar2;
+    display: grid;
+    grid-template-areas: 
+    "h2 h2 im"
+    "p p im"
+    "p p im"
+    ;
 }
 
 #arti3 { 
     grid-area: ar3;
+    display: grid;
+    grid-template-areas:
+    "h2 h2 h2"
+    "p p p"
+    "ta ta ta";
 }
 
 footer { 
@@ -41,8 +85,9 @@ main {
     display: grid;
     grid-template-areas:
     "h h h"
-    "ar ar ar"
-    "ar ar ar"
-    "ar2 ar2 ar3"
+    "ar0 ar0 ar0"
+    "ar1 ar1 ar1"
+    "ar2 ar2 ar2"
+    "ar3 ar3 ar3"
     "f f f";
 }
