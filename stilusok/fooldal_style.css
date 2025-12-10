@@ -70,7 +70,7 @@ h1 {
 
 #beszam {
     padding: 1.5rem;
-    background-color: var(--ACCENT-LIGHT);
+    background-color: var(--ACCENT);
 }
 
 #beszam p {
@@ -98,6 +98,18 @@ h1 {
     background-color: #00cfb7; /* placeholder */
     aspect-ratio: 1 / 1;
     border-radius: 0.5rem;
+    opacity: 0.7;
+    transition: transform 0.35s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+#kep-tarolo:has(.kep:hover) .kep {
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+
+#kep-tarolo:has(.kep:hover) .kep:hover {
+    transform: scale(1.05);
+    opacity: 1;
 }
 
 footer {
@@ -130,4 +142,10 @@ a {
     text-decoration: none;
     color: black;
     font-weight: var(--TEXT-WEIGHT-BOLD);
+}
+
+@keyframes rockingAnimation {
+    0% { transform: rotate(-1deg); }
+    50% { transform: rotate(1deg); }
+    100% { transform: rotate(-1deg); }
 }
