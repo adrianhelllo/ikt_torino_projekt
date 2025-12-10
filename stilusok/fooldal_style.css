@@ -40,8 +40,8 @@ header a {
     transition: opacity 0.2s;
 }
 
-header a:hover {
-    opacity: 0.6;
+a:hover {
+    opacity: 0.8;
 }
 
 h1 {
@@ -73,7 +73,43 @@ h1 {
     background-color: var(--ACCENT-LIGHT);
 }
 
-#beszam li a {
+#beszam p {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+#beszam li {
+    color: var(--PRIMARY);
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 300
+}
+
+#kep-tarolo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 80%;
+    margin: auto;
+    gap: 0.5rem;
+}
+
+#kep-tarolo .kep {
+    background-color: #00cfb7; /* placeholder */
+    aspect-ratio: 1 / 1;
+    border-radius: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 2rem 0;
+    background-color: var(--ACCENT);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.4rem;
     color: var(--PRIMARY);
 }
 
