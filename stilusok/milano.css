@@ -1,85 +1,212 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #F4F4F4;
+    --text-color: #333;
+    --highlight-color: #4682B4;
+    --font-family-primary: 'Arial', sans-serif;
+}
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
+    font-family: var(--font-family-primary);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    flex-grow: 1;
+    background-color: var(--secondary-color);
+}
+
+article {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-3px);
+}
+
+h1, h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
 }
 
 header {
-    padding: 10px;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header h3 {
-    text-align: center;
+    color: white;
     margin-bottom: 10px;
 }
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
+    margin-top: 10px;
 }
 
 nav a {
     text-decoration: none;
+    color: white;
     padding: 5px 10px;
-    border: 1px solid;
-    border-radius: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-main {
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
-    padding: 20px 0;
-}
-
-article {
-    margin-bottom: 30px;
-}
-
-article h1 {
-    margin-bottom: 10px;
-    font-size: 1.4rem;
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 article img {
     width: 100%;
-    max-width: 600px; 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
     height: auto;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
-article p {
-    text-align: justify; 
+#article1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+#article2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#article2 img {
+    order: -1;
+}
+
+#article3 {
+    display: block;
+}
+
+#article3 > img {
+    display: none;
+}
+
+#article3 table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: var(--secondary-color);
+}
+
+#article3 table th,
+#article3 table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
 }
 
 footer {
-    padding: 15px 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 20px;
     text-align: center;
 }
 
-@media (min-width: 700px) {
-    article {
-        display: flex;
-        gap: 20px;
-        align-items: flex-start;
+footer h3 {
+    margin: 0;
+    color: white;
+}
+
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    article img {
-        width: 40%;
+    nav {
+        flex-wrap: nowrap;
+        margin-top: 0;
     }
 
-    article p {
-        width: 60%;
+    #article1 {
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-areas:
+            "h1 h1"
+            "p img";
+        align-items: start;
+        gap: 30px;
+    }
+
+    #article1 h1 {
+        grid-area: h1;
+    }
+
+    #article1 p {
+        grid-area: p;
+    }
+
+    #article1 img {
+        grid-area: img;
+        max-width: none;
+    }
+
+    #article2 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+            "h1 h1"
+            "img p";
+        gap: 30px;
+    }
+
+    #article2 h1 {
+        grid-area: h1;
+        width: auto;
+        order: 0;
+    }
+
+    #article2 img {
+        grid-area: img;
+        order: 0;
+        width: auto;
+    }
+
+    #article2 p {
+        grid-area: p;
+        order: 0;
+        width: auto;
+    }
+
+    #article3 {
+        display: block;
+    }
+
+    #article3 > img {
+        display: none;
     }
 }
