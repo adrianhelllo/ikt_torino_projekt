@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    padding: auto;
+}
+
 h1 {
     grid-area: h1;
 }
@@ -6,12 +14,18 @@ h2 {
     grid-area: h2;
 }
 
+a {
+    
+    grid-area: a;
+}
+
 p {
     grid-area: p;
 }
 
 img {
     grid-area: im;
+    width: 100%;
 }
 
 table {
@@ -20,14 +34,20 @@ table {
 
 header {
     grid-area: h;
+    margin: auto;
+    padding: auto;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-    "h3 n n"
+    "h3 a a"
     ;
+    color: white;
+    background-color: #143C96;
 }
 
 nav { 
     grid-area: n; 
+    text-decoration: none;
 }
 
 aside  {
@@ -36,21 +56,25 @@ aside  {
 
 article{
     grid-area: ar;
-    ;
+    text-align: center;
 }
 
 #arti0 {
     grid-area: ar0;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "h1 h1 im"
-    "n n im"
-    "n n im";
+    "a a im"
+    "a a im";
+    background-color: rgb(202, 202, 202);
 }
 
 #arti1 {
     grid-area: ar1; 
+    
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "im h2 h2"
     "im p p"
@@ -60,7 +84,9 @@ article{
 
 #arti2 { 
     grid-area: ar2;
+    
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "h2 h2 im"
     "p p im"
@@ -70,7 +96,9 @@ article{
 
 #arti3 { 
     grid-area: ar3;
+    
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
     "h2 h2 h2"
     "p p p"
@@ -79,6 +107,9 @@ article{
 
 footer { 
     grid-area: f; 
+    text-align: center;
+    color: white;
+    background-color: #143C96;
 }
 
 main {
