@@ -62,12 +62,11 @@ header .dropdown .dropdown-menu {
 
 header .dropdown .dropdown-item {
     font-size: 1.1rem;
-    transition: opacity 0.2s;
 }
 
 header .dropdown .dropdown-item:hover {
     background-color: transparent;
-    opacity: 0.5;
+    opacity: 0.5 !important;
 }
 
 h1 {
@@ -105,13 +104,23 @@ h1 {
 #cards .card {
     background-color: var(--ACCENT-50);
     border: none;
-    color: var(--PRIMARY)
+    color: var(--PRIMARY);
+    padding: 0.5rem;
+    transition: transform 0.25s ease-in-out;
+}
+
+#cards .card:hover {
+    transform: scale(1.025);
 }
 
 #cards .card a {
     background-color: var(--PRIMARY);
     border: none;
-    color: black;   
+    color: black;
+}
+
+#cards .card h5 {
+    font-weight: var(--HEADING-WEIGHT);
 }
 
 #beszam {
@@ -194,7 +203,8 @@ footer p {
 #kep-tarolo #kep4 {background-image: url(../forrasok/fooldal_forrasok/galeria/kep7.png);}
 #kep-tarolo #kep8 {background-image: url(../forrasok/fooldal_forrasok/galeria/kep8.png);}
 #kep-tarolo #kep9 {background-image: url(../forrasok/fooldal_forrasok/galeria/kep9.png);}
-/* -- */
+
+/* UTILITY */
 
 #highlight {
     color: var(--ACCENT)
@@ -208,9 +218,13 @@ h2 {
 }
 
 a {
-    text-decoration: none;
-    color: black;
-    font-weight: var(--TEXT-WEIGHT-BOLD);
+    text-decoration: none !important;
+    color: black !important; 
+    font-weight: var(--TEXT-WEIGHT-BOLD) !important;
+}
+
+a:hover, a:focus {
+    opacity: 0.8 !important;
 }
 
 @keyframes rockingAnimation {
