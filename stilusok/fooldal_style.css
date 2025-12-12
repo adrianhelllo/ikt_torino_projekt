@@ -219,7 +219,7 @@ h2 {
 
 a {
     text-decoration: none !important;
-    color: black !important; 
+    color: black; 
     font-weight: var(--TEXT-WEIGHT-BOLD) !important;
 }
 
