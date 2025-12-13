@@ -107,6 +107,7 @@ h1 {
     color: var(--PRIMARY);
     padding: 0.5rem;
     transition: transform 0.25s ease-in-out;
+    width: 25rem;
 }
 
 #cards .card:hover {
@@ -136,10 +137,19 @@ h1 {
 }
 
 #beszam li {
-    color: var(--PRIMARY);
     margin: 1rem 0;
+    color: var(--PRIMARY);
+    transition: transform 0.1s ease-in-out;
+}
+
+#beszam li a {
     font-size: 1.5rem;
-    font-weight: 300
+    font-weight: 300;
+    color: var(--PRIMARY);
+}
+
+#beszam li:hover {
+    transform: translateX(10px);
 }
 
 #kep-tarolo {
@@ -231,4 +241,46 @@ a:hover, a:focus {
     0% { transform: rotate(-1deg); }
     50% { transform: rotate(1deg); }
     100% { transform: rotate(-1deg); }
+}
+
+@media screen and (max-width: 1400px) {
+    #cards {
+        flex-flow: row wrap;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #cards {
+        max-width: 100%;
+        margin-inline: 2rem;
+    }
+
+    
+    #hero #cards .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 2rem;
+        word-break: break-all;
+    }
+
+    #kep-tarolo {
+        grid-template-columns: 1fr 1fr;
+        max-width: 90%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header h3, header .dropdown button {
+        font-size: 1rem;
+    }
+
+    header .dropdown .dropdown-menu {
+        background-color: var(--PRIMARY);
+        border: 1px solid var(--ACCENT-50)
+    }
 }

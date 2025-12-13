@@ -75,6 +75,15 @@ a {
     font-weight: bold;
 }
 
+a:hover {
+    color: #c7a200;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 header {
     grid-area: h;
     display: grid;
@@ -91,11 +100,11 @@ nav {
 }
 
 header h3 {
-    margin: 3px 0;
+    margin: 3px;
 }
 
 header nav {
-    margin: 3px 0;
+    margin-top: 10px;
 }
 
 #article1 {
