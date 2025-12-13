@@ -12,6 +12,12 @@ h1 {
 
 h2 {
     grid-area: h2;
+    font-size: 30px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 30px;
 }
 
 a {
@@ -23,17 +29,24 @@ a {
 p {
     grid-area: p;
     text-align: center;
+    font-size: 30px;
+    margin: 20px;
 }
 
 ul {
     grid-area: ul;
     text-align: center;
-    list-style-type: none;
+    list-style-type: circle;
+    font-size: 30px;
+    margin: auto;
 }
 
 img {
     grid-area: im;
     width: 100%;
+    border-style: solid;
+    border-color: rgb(76, 133, 187);
+    border-radius: 10px;
 }
 
 table {
@@ -43,7 +56,7 @@ table {
 
 td, th { 
     border: 1px solid #143C96;
-
+    font-size: 30px;
 }
 
 th {
@@ -73,13 +86,18 @@ header h3, header nav {
     margin-inline: 3rem;
 }
 
-h3 {
-    margin: 0;
-}
-
 nav { 
     grid-area: n; 
     text-decoration: none;
+    font-size: 30px;
+}
+
+#arti0 a:hover {
+    color:#143C96;
+}
+
+header a:hover {
+    color:rgb(76, 133, 187) ;
 }
 
 aside  {
@@ -164,4 +182,40 @@ main {
     "ar2 ar2 ar2"
     "ar3 ar3 ar3"
     "f f f";
+}
+
+@media screen and (max-width: 1425px){
+#arti0 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "h1 im"
+    "n  im"
+    "n  im";
+}
+
+#arti1{
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: 
+    "im h2"
+    "im p"
+    "im p";
+}
+
+#arti2{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "h2 im"
+    "ul im"
+    "ul im"
+    ;
+}
+}
+
+@media screen and (max-width: 1425px){
+
+p,h2,h3,td,th,ul,a {
+    font-size: 20px;
+}
+
+
 }
