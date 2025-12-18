@@ -211,11 +211,10 @@ main {
 }
 }
 
-@media screen and (max-width: 1425px){
+@media screen and (max-width: 700px){
 
 p,h2,h3,td,th,ul,a {
     font-size: 20px;
 }
-
 
 }
